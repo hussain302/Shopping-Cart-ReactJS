@@ -4,7 +4,7 @@ const ShopNavbar = () => {
     return (
         <>
             <div className='mb-3 p-1' style={{ backgroundColor: "white" }}>
-                <Link to="/"> <img src="./WebImages/logo.png" className="mx-auto d-block" style={{ width: "5%", height: "5%" }} alt="..." /></Link>
+                <Link to="/"> <img src="./WebImages/Products/logo.png" className="mx-auto d-block" style={{ width: "5%", height: "5%" }} alt="..." /></Link>
             </div>
             <div style={{ backgroundColor: "rgb(240,240,240)" }}>
                 <ul className="nav justify-content-center">

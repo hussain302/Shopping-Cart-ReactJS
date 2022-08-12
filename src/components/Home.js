@@ -63,7 +63,7 @@ const Home = () => {
     <>
       <TopMessage />
       <div className='mb-3 p-1' style={{ backgroundColor: "white" }}>
-        <Link to="/"> <img src="./WebImages/logo.png" className="mx-auto d-block" style={{ width: "5%", height: "5%" }} alt="..." /></Link>
+        <Link to="/"> <img src="./WebImages/products/logo.png" className="mx-auto d-block" style={{ width: "5%", height: "5%" }} alt="..." /></Link>
       </div>
 
       <div className='container'>
