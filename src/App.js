@@ -5,7 +5,13 @@ import Shop from "./components/Shop";
 import About from "./components/About";
 import Cart from "./components/Cart";
 import Contact from "./components/Contact";
+import Men from "./components/Men";
+import Women from "./components/Women";
+import Fragrances from "./components/Fragrances";
+import Teens from "./components/Teens";
 import { Routes, Route } from "react-router-dom";
+import Error from "./components/Error";
+
 
 function App() {
   return (
@@ -17,10 +23,15 @@ function App() {
       <main style={{ marginTop: 55 }}>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/men" element={<Men />} />
+          <Route path="/women" element={<Women />} />
+          <Route path="/fragrances" element={<Fragrances />} />
+          <Route path="/teens" element={<Teens />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="*" element={<Error />} />
         </Routes>
       </main>
 
@@ -30,5 +41,4 @@ function App() {
     </>
   );
 }
-
 export default App;
