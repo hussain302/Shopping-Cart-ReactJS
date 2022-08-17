@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 import Card from './Card';
 import CardTwo from './CardTwo';
 import Headings from './Headings'
@@ -13,25 +13,25 @@ const Home = () => {
       id: 1,
       title: "Product-1",
       price: 3000,
-      src: "./WebImages/Products/stitched_1_1.webp"
+      image: "./WebImages/Products/stitched_1_1.webp"
     },
     {
       id: 2,
       title: "Product-2",
       price: 5000,
-      src: "./WebImages/Products/22-316_1_.webp"
+      image: "./WebImages/Products/22-316_1_.webp"
     },
     {
       id: 3,
       title: "Product-3",
       price: 6999,
-      src: "./WebImages/Products/jpws-22-299-1_1__1.webp"
+      image: "./WebImages/Products/jpws-22-299-1_1__1.webp"
     },
     {
       id: 4,
       title: "Product-4",
       price: 3799,
-      src: "./WebImages/Products/22-323_1__1.webp"
+      image: "./WebImages/Products/22-323_1__1.webp"
     }
   ];
 
@@ -58,6 +58,9 @@ const Home = () => {
       src: "./WebImages/Products/kid.webp"
     }
   ];
+
+
+
 
   return (
     <>
@@ -129,7 +132,7 @@ const Home = () => {
         </div>
       </div>
 
-      <Slogan/>
+      <Slogan />
     </>
   )
 }
